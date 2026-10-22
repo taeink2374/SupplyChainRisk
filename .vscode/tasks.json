@@ -1,0 +1,25 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Run SupplyChainRisk",
+      "type": "process",
+      "command": "python3",
+      "args": [
+        "-m",
+        "http.server",
+        "8000",
+        "--directory",
+        "dist"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated"
+      }
+    }
+  ]
+}
